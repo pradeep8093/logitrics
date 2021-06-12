@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "logitrics"
+    }
+  },
+  "defaultProject": "logitrics",
+  "cli": {
+    "analytics": false
+  }
 }
