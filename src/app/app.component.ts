@@ -19,9 +19,7 @@ export class AppComponent {
     private userService: UserService,
     private userContextService: UserContextService,
     private initService: InitService
-  ) {
-    window['logitrics'] = this;
-  }
+  ) {}
 
   setEventTimeStamp() {
     this.eventProperties['$timestamp'] = new Date();
@@ -47,5 +45,9 @@ export class AppComponent {
     } else {
       console.log("Logitrics is not initialized yet.")
     }
+  }
+
+  ngOnInit() {
+    window['logitrics'] = this;
   }
 }
